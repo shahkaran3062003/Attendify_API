@@ -101,4 +101,17 @@ class Student
         $stmt->execute();
         return $stmt;
     }
+
+    public function removeStudent()
+    {
+        $query = "DELETE FROM " . $this->table . " WHERE id = ?";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(1, $this->id);
+
+        if ($stmt->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

@@ -16,3 +16,4 @@ require_once(INC_PATH . DS . "config.php");
 require_once(CORE_PATH . DS . "teacher.php");
 require_once(CORE_PATH . DS . "student.php");
 require_once(CORE_PATH . DS . "class.php");
+require_once(CORE_PATH . DS . "attendance.php");
